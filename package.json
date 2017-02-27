@@ -1,0 +1,26 @@
+{
+  "name": "website-scraper-phantom-html",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "phantomjs-prebuilt": "^2.1.14",
+    "system": "^1.2.0",
+    "webpage": "^0.3.0",
+    "bluebird": "^3.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s0ph1e/node-website-scraper-phantom-html.git"
+  },
+  "author": "s0ph1e",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s0ph1e/node-website-scraper-phantom-html/issues"
+  },
+  "homepage": "https://github.com/s0ph1e/node-website-scraper-phantom-html#readme"
+}
