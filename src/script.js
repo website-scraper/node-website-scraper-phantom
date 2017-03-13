@@ -13,13 +13,10 @@ function done() {
 	phantom.exit(0);
 }
 
-page.onLoadFinished = function() {
-	setTimeout(done, 1000);
-};
-
 page.open(url, function (status) {
 	if (status !== 'success') {
 		system.stderr.write('Can\'t open page');
 		phantom.exit(1);
 	}
+	setTimeout(done, 1000);
 });

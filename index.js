@@ -1,5 +1,7 @@
-var Promise = require('bluebird');
-var getPhantomHtml = require('./get-phantom-html.js');
+'use strict';
+
+const Promise = require('bluebird');
+const getPhantomHtml = require('./src/get-phantom-html.js');
 
 /**
  * Makes phantom request if response contains html, returns original response body otherwise
@@ -7,8 +9,8 @@ var getPhantomHtml = require('./get-phantom-html.js');
  * @return {Promise} - resolved with body if success, rejected if error
  */
 module.exports = (response) => {
-	var contentType = response.headers['content-type'];
-	var isHtml = contentType && contentType.split(';')[0] === 'text/html';
+	const contentType = response.headers['content-type'];
+	const isHtml = contentType && contentType.split(';')[0] === 'text/html';
 	if (isHtml) {
 		return getPhantomHtml(response.request.href);
 	} else {

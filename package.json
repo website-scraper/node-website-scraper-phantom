@@ -1,8 +1,14 @@
 {
-  "name": "website-scraper-phantom-html",
-  "version": "0.0.0",
-  "description": "",
+  "name": "website-scraper-phantom",
+  "version": "0.1.0",
+  "description": "Plugin for website-scraper which receives html for dynamic websites using PhantomJS",
+  "readmeFilename": "README.md",
   "main": "index.js",
+  "keywords": [
+    "website-scraper",
+    "phantomjs",
+    "html"
+  ],
   "dependencies": {
     "phantomjs-prebuilt": "^2.1.14",
     "system": "^1.2.0",
@@ -15,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s0ph1e/node-website-scraper-phantom-html.git"
+    "url": "git+https://github.com/s0ph1e/node-website-scraper-phantom.git"
   },
-  "author": "s0ph1e",
+  "author": "Sophia Antipenko <sophia@antipenko.pp.ua>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/s0ph1e/node-website-scraper-phantom-html/issues"
+    "url": "https://github.com/s0ph1e/node-website-scraper-phantom/issues"
   },
-  "homepage": "https://github.com/s0ph1e/node-website-scraper-phantom-html#readme"
+  "homepage": "https://github.com/s0ph1e/node-website-scraper-phantom"
 }

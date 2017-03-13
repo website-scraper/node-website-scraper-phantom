@@ -1,14 +1,16 @@
-var path = require('path');
-var phantomjs = require('phantomjs-prebuilt');
-var Promise = require('bluebird');
+'use strict';
 
-var scriptPath = path.join(__dirname, 'script.js');
+const path = require('path');
+const phantomjs = require('phantomjs-prebuilt');
+const Promise = require('bluebird');
 
-module.exports = function (url) {
+const scriptPath = path.join(__dirname, 'script.js');
+
+module.exports = (url) => {
 	return new Promise((resolve, reject) => {
-		var program = phantomjs.exec(scriptPath, url);
-		var stdout = '';
-		var stderr = '';
+		const program = phantomjs.exec(scriptPath, url);
+		let stdout = '';
+		let stderr = '';
 
 		program.stdout.on('data', (data) => {
 			stdout += data;
