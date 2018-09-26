@@ -12,7 +12,7 @@ module.exports = (response) => {
 	const contentType = response.headers['content-type'];
 	const isHtml = contentType && contentType.split(';')[0] === 'text/html';
 	if (isHtml) {
-		return getPhantomHtml(response.request.href);
+		return getPhantomHtml(response.request.href, response.request.proxy);
 	} else {
 		return Promise.resolve(response.body);
 	}

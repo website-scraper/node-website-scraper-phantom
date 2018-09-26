@@ -6,9 +6,13 @@ const Promise = require('bluebird');
 
 const scriptPath = path.join(__dirname, 'script.js');
 
-module.exports = (url) => {
+module.exports = (url, proxy) => {
+	console.log(proxy.hostname);
+	var host = proxy.hostname;
+	var port = proxy.port;
+
 	return new Promise((resolve, reject) => {
-		const program = phantomjs.exec(scriptPath, url);
+		const program = phantomjs.exec(scriptPath, url, host, port);
 		let stdout = '';
 		let stderr = '';
 
