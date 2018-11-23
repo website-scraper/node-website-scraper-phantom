@@ -23,7 +23,7 @@ module.exports = (url) => {
 		program.on('exit', (code) => {
 			if (code === 0) {
 				// convert utf-8 -> binary string because website-scraper needs binary
-				resolve(new Buffer(stdout).toString('binary'));
+				resolve(Buffer.from(stdout).toString('binary'));
 			} else {
 				reject(new Error(`Phantomjs finished with exit code ${code}. ${stderr}`));
 			}
