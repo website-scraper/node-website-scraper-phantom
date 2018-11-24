@@ -24,7 +24,7 @@
     "fs-extra": "^7.0.1",
     "mocha": "^5.2.0",
     "serve-static": "^1.13.2",
-    "website-scraper": "^4.0.0"
+    "website-scraper": "website-scraper/node-website-scraper"
   },
   "scripts": {
     "test": "mocha --timeout 10000 --exit"
