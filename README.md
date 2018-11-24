@@ -1,3 +1,5 @@
+# NOTE: this is documentation for next major version, which is work in progress. If you need documentation for version 0.1.0 you can find it [here](https://github.com/website-scraper/node-website-scraper-phantom/blob/0.1/README.md)
+
 ## Introduction
 Plugin for [website-scraper](https://github.com/s0ph1e/node-website-scraper) which returns html for dynamic websites using PhantomJS
 
