@@ -8,7 +8,7 @@ const getPhantomHtml = require('./src/get-phantom-html.js');
  * @param {Object} response - response object from `request` module
  * @return {Promise} - resolved with body if success, rejected if error
  */
-module.exports = (response) => {
+function handleResponse (response) {
 	const contentType = response.headers['content-type'];
 	const isHtml = contentType && contentType.split(';')[0] === 'text/html';
 	if (isHtml) {
@@ -16,4 +16,12 @@ module.exports = (response) => {
 	} else {
 		return Promise.resolve(response.body);
 	}
-};
+}
+
+class AfterResponsePhantomPlugin {
+	apply(registerAction) {
+		registerAction('afterResponse', ({response}) => handleResponse(response));
+	}
+}
+
+module.exports = AfterResponsePhantomPlugin;
