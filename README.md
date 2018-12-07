@@ -1,11 +1,9 @@
-# NOTE: this is documentation for next major version, which is work in progress. If you need documentation for version 0.1.0 you can find it [here](https://github.com/website-scraper/node-website-scraper-phantom/blob/0.1/README.md)
-
-## Introduction
-Plugin for [website-scraper](https://github.com/s0ph1e/node-website-scraper) which returns html for dynamic websites using PhantomJS
-
-[![Build Status](https://travis-ci.org/website-scraper/node-website-scraper-phantom.svg?branch=master)](https://travis-ci.org/website-scraper/node-website-scraper-phantom)
 [![Version](https://img.shields.io/npm/v/website-scraper-phantom.svg?style=flat)](https://www.npmjs.org/package/website-scraper-phantom)
 [![Downloads](https://img.shields.io/npm/dm/website-scraper-phantom.svg?style=flat)](https://www.npmjs.org/package/website-scraper-phantom)
+[![Build Status](https://travis-ci.org/website-scraper/node-website-scraper-phantom.svg?branch=master)](https://travis-ci.org/website-scraper/node-website-scraper-phantom)
+
+# website-scraper-phantom
+Plugin for [website-scraper](https://github.com/s0ph1e/node-website-scraper) which returns html for dynamic websites using PhantomJS
 
 ## Requirements
 * nodejs version >= 8
