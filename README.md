@@ -3,7 +3,9 @@
 [![Build Status](https://travis-ci.org/website-scraper/node-website-scraper-phantom.svg?branch=master)](https://travis-ci.org/website-scraper/node-website-scraper-phantom)
 
 # website-scraper-phantom
-Plugin for [website-scraper](https://github.com/s0ph1e/node-website-scraper) which returns html for dynamic websites using PhantomJS
+Plugin for [website-scraper](https://github.com/s0ph1e/node-website-scraper) which returns html for dynamic websites using PhantomJS.
+
+This module is an Open Source Software maintained by one developer in free time. If you want to thank the author of this module you can use [Patreon](https://www.patreon.com/s0ph1e).
 
 ## Requirements
 * nodejs version >= 8
