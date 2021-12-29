@@ -1,3 +1,5 @@
+## ⚠️ This plugin is deprecated and no longer maintained. Please consider using [website-scraper-puppeteer](https://github.com/website-scraper/website-scraper-puppeteer) instead.
+
 [![Version](https://img.shields.io/npm/v/website-scraper-phantom.svg?style=flat)](https://www.npmjs.org/package/website-scraper-phantom)
 [![Downloads](https://img.shields.io/npm/dm/website-scraper-phantom.svg?style=flat)](https://www.npmjs.org/package/website-scraper-phantom)
 [![Build Status](https://travis-ci.com/website-scraper/node-website-scraper-phantom.svg?branch=master)](https://travis-ci.com/github/website-scraper/node-website-scraper-phantom)
